@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Desafio Sekai Taikai</title>
+    <style>
+        .mensagem-link {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .mensagem-link a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 4px;
+        }
+
+        .mensagem-link a:hover {
+            text-decoration: underline;
+        }
+
+        .mensagem-link:hover {
+            background-color: #b71c1c;
+        }
+
+        button {
+            position: relative;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="mensagem-link">
+        <p>Visite nosso site!</p>
+        <a href="https://joc4dapadoc4.github.io/TheJocas.Films/" target="_blank">The Jocas Films</a>
+    </div>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Cenário do passo 0">
+            <p>Após uma vitória épica no Torneio All Valley, você descobre a existência do lendário Torneio Sekai Taikai. Conhecido por reunir os maiores mestres de karatê do mundo, este torneio oferece uma chance única de provar suas habilidades. Sua jornada para se qualificar começa agora, enfrentando desafios que testarão sua coragem e determinação. Está pronto para começar?</p>
+            <button class="btn-proximo" data-proximo="1">Sim, estou pronto para a aventura!</button>
+            <button class="btn-proximo" data-proximo="2">Ainda não, preciso me preparar mais.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você decide que está pronto para o desafio e precisa encontrar uma pista crucial em Los Angeles. Duas opções se apresentam: o temido Cobra Kai Dojo, conhecido por seu treinamento intenso e competitivo, ou o pacífico Miyagi-Do Dojo, famoso por seu equilíbrio e filosofia de vida. Onde você começará sua busca?</p>
+            <button class="btn-proximo" data-proximo="3">Visitar o Cobra Kai Dojo</button>
+            <button class="btn-proximo" data-proximo="4">Explorar o Miyagi-Do Dojo</button>
+            <img src="cobra-kai-lawrusso.gif" alt="Cenário do passogi">
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você decide que ainda não está pronto e prefere treinar mais antes de enfrentar o desafio. Durante o treinamento, você reflete sobre o que teria encontrado no caminho para o Torneio Sekai Taikai e se prepara para futuros desafios.</p>
+            <img src="5.gif" alt="Imagem de treino e prepfgfrgaração">
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No Cobra Kai Dojo, você é recebido com um olhar desafiador e uma aura de competição. Após uma breve conversa com o mestre, você descobre que a primeira pista leva a um desafio na região montanhosa da Califórnia. Preparado para essa nova etapa?</p>
+            <button class="btn-proximo" data-proximo="5">Viajar para as montanhas da Califórnia</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>No Miyagi-Do Dojo, você encontra uma pista que o direciona para a mesma região montanhosa da Califórnia. Agora é hora de enfrentar o próximo desafio, que exigirá tanto habilidade quanto sabedoria.</p>
+            <button class="btn-proximo" data-proximo="5">Viajar para as montanhas da Califórnia</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Chegando nas montanhas da Califórnia, você encontra um dojo isolado. O treinamento aqui é rigoroso e testará seus limites físicos e mentais. Você está pronto para enfrentar este intenso treinamento?</p>
+            <button class="btn-proximo" data-proximo="6">Sim, enfrentarei o treinamento com coragem!</button>
+            <button class="btn-proximo" data-proximo="7">Desistir e voltar para casa, refletindo sobre a jornada.</button>
+            <img src="tumblr_lk9zftlr6L1qzreado1_500.gif" alt="tumblr_lk9zftlr6L1qzreado1_500.giferg">
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Você enfrenta o treinamento com determinação e sucesso. Agora, a próxima etapa é viajar para o Japão, onde o Torneio Sekai Taikai será realizado. Sua jornada está quase completa.</p>
+            <button class="btn-proximo" data-proximo="8">Viajar para o Japão</button>
+            <img src="Az2KVb.gif" alt="iiuvrvv">
+        
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Decidindo que o treinamento é muito difícil, você volta para casa. Enquanto reflete sobre sua decisão, pensa sobre o que poderia ter conquistado e se prepara para futuros desafios.</p>
+            <img src="68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4a785347487331354c53765669413d3d2d3935303037313039342e3136333264343133343764.gif" alt="iiuuhebfefc">
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Chegando ao Japão, você descobre o local do Torneio Sekai Taikai. O ambiente está repleto de lutadores e espectadores ansiosos. Agora, você deve escolher o caminho para a arena do torneio, onde enfrentará os melhores lutadores do mundo. Qual caminho você escolherá?</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo caminho principal, direto para a arena</button>
+            <button class="btn-proximo" data-proximo="10">Explorar o caminho alternativo e descobrir novas oportunidades</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>O caminho principal leva você diretamente à arena do torneio. Após uma série de lutas intensas e emocionantes, você se sagra campeão do Torneio Sekai Taikai, mostrando que é um verdadeiro mestre do karatê!</p>
+            <img src="cobra-kai-miguel-crane-kick-h2krs69ynbmwloy1.gif" alt="Imagem do campeão do torneio">
+        </div>
+        <div class="passo" id="passo-10">
+            <p>O caminho alternativo é desafiador e sinuoso, mas oferece uma nova perspectiva sobre a arte do karatê. Embora você não chegue à arena, adquire valiosas lições e uma nova visão sobre a prática. Com uma nova sabedoria, retorna para casa.</p>
+            <button class="btn-proximo" data-proximo="9">Voltar e seguir pelo caminho principal</button>
+        </div>
+        <!-- Player de áudio posicionado aqui, dentro do main -->
+        <audio id="background-music" controls>
+            <source src="In The End [Official HD Music Video] - Linkin Park.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
